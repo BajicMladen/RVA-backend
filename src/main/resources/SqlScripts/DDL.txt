@@ -1,0 +1,60 @@
+drop table if exists projekat cascade;
+drop table if exists student cascade;
+drop table if exists grupa cascade;
+drop table if exists smer cascade;
+
+
+create table projekat (
+	id integer not null,
+	naziv varchar(100),
+	oznaka varchar(10),
+	opis varchar(500)
+);
+
+create table smer(
+	id integer not null,
+	naziv varchar(100),
+	oznaka varchar(50)
+);
+
+create table grupa(
+	id  integer not null,
+	oznaka varchar(10),
+	smer integer not null
+);
+
+create table student(
+	id integer not null,
+	ime varchar(50),
+	prezime varchar(50),
+	broj_indeksa varchar(20),
+	grupa integer not null,
+	projekat integer not null
+);
+
+alter table projekat add constraint pk_projekat primary key(id);
+alter table smer add constraint pk_smer primary key(id);
+alter table grupa add constraint pk_grupa primary key(id);
+alter table student add constraint pk_student primary key(id);
+
+
+alter table grupa add constraint fk_grupa_smer foreign key(smer) 
+references smer;
+
+alter table student add  constraint fk_student_grupa foreign key(grupa)
+references grupa;
+
+alter table student add constraint fk_student_projekat foreign key(projekat)
+references projekat;
+
+
+create index idxpk_smer on smer(id);
+create index idxpk_projekat on projekat(id);
+create index idxpk_grupa on grupa(id);
+create index idxpk_student on student(id);
+
+create index idxfk_grupa_smer on grupa(smer);
+create index idxfk_student_grupa on student(grupa);
+create index idxfk_student_projekat on student(projekat);
+
+

@@ -1,0 +1,255 @@
+--- Projekat podaci 
+insert into "projekat"("id","naziv","oznaka","opis")
+values(1,'Razvoj višeslojnih aplikacija','IZOO22','Cilj projekata jeste prakticno savladavanje razlicitih slojeva u razvoju aplikacije.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(2,'Projekatovanje baza podataka','IZOO20','Razvoj postupaka za upravljanje podacima i pojam BP. Osnovni koncepti i karakteristike modela podataka. ER model podataka. Klasifikacija i vrste ograničenja u ER modelu podataka.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(3,'Sistemi baza podataka','IMIS16','Cilj projekta je specijalističko (napredno) obrazovanje u oblasti sistema baza podataka. Studenti će razumeti koncepte i komponete sistema baza podataka i biće im ukazano na značaj standardizacije u oblasti sistema za upravljanje bazama podataka.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(4,'Mobilne informacione tehnologije','IMIS15','Studenti će steći veštine i znanja neophodna za kreiranje i održavanje aplikacija namenjenih mobilnim platformama, a baziranih na Android operativnom sistemu, sa posebnim naglaskom na teme koje se tiču primene metoda i tehnika softverskog inženjerstva (arhitekturu i proces razvoja softvera) u projektovanju i razvoju aplikacija namenjenih za mobilne platforme.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(5,'Robotizovani sistemi u industriji','IZOI31','Kreiranje generickog(robota) sistema za automatizaciju koristeci alate kao sto su robot studio');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(6,'Poslovno komuniciranje','IM15','Kreiranje niza poslovnih dokumenata i pripremanje prezentacija kako bi se u potpunosti zaokruzio proizvod koji se propagira');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(7,'Menadzment ljudskih resursa','IM17','Ucestvovanje u timu za promovisanje proizvoda i pracenje razvoja drugih timova koji predstavljaju konkurenciju');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(8,'Metode i tehnike upravljanja projektima','IZOO18','Kreiranje i razvijanje ideje novog proizvoda u timovima sa jasno definisanim pozicijama');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(9,'Sistemi menadzmenta kvalitetom','IM17','Pracenje i implementacija standarda kvaliteta u projektima zasnovanim na ralnim organizacijama.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(10,'Objektno orijentisane informacione tehnologije','IM1512','Razvoj aplikacije koja kopira osnovne feature PAINT aplikacije kroz primjenu osnovnih ovjekto orijenitisanih principa');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(11,'Racunarom podrzano projektovanje proizvoda','II1005','Kreiranje dijelova odredjenog proizvoda na osnovu kodela. Sklapanje osnovnih djelova u sklop i kreiranje dokumentacije.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(12,'Poslovni informacioni sistemi','IZOO13','Razvoj jedne od grana ERP sistema u realnog organizaciji i predstavljanje prednosti i mana implementirane tehnologije');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(13,'Projektovanje informacionh sistema','I1018','Projektovanje informacionog sistema na osnovu realne organizacije uz pomoc razlicitih dijagrama i dokumentacije.');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(14,'Osnove ekonomije za inzenjere','IZOO17','Obrada finansiskih promjena u toku jedne godine u realnom sistemu vodjenjem glavne knjige, konta i dnevnika');
+insert into "projekat"("id","naziv","oznaka","opis")
+values(15,'Veb orijentisane tehnologije i sistemi','IZOO15','Cilj projekta je da upozna studente sa načinom funkcionisanja najpopularnijeg Internet servisa - WWW. Poseban akcenat je stavljen na moderne tehnologije (Ajax, PHP, Javascript, XML, itd.) na kojima ovaj servis počiva, kao i na aplikacije koje se temelje na ovim tehnologijama a koje su postale planetarno popularne - socijalne mreže, blogovi, servisi za deljenje video sadržaja, wiki, itd.');
+
+--Smer podaci
+insert into "smer"("id","naziv","oznaka")values(1,'Inženjerstvo informacionih sistema','IT');
+insert into "smer"("id","naziv","oznaka")values(2,'Inžinjerski menadžment','IM');
+insert into "smer"("id","naziv","oznaka")values(3,'Informacioni inženjering','II');
+insert into "smer"("id","naziv","oznaka")values(4,'Računarstvo i automatika','RA');
+insert into "smer"("id","naziv","oznaka")values(5,'Softversko inženjerstvo i informacione tehnologije','SIIT');
+insert into "smer"("id","naziv","oznaka")values(6,'Mehatronika','MH');
+insert into "smer"("id","naziv","oznaka")values(7,'Animacije u inženjerstvu','AI');
+insert into "smer"("id","naziv","oznaka")values(8,'Industiski menadžment','IDM');
+insert into "smer"("id","naziv","oznaka")values(9,'Grafičko inženjerstvo i dizajn','GRID');
+insert into "smer"("id","naziv","oznaka")values(10,'Energetika,elektronika i telekomunikacije','EET');
+insert into "smer"("id","naziv","oznaka")values(11,'Biomedicinsko inžinjerstvo','BMI');
+insert into "smer"("id","naziv","oznaka")values(12,'Geodezija i geomatika','GG');
+insert into "smer"("id","naziv","oznaka")values(13,'Proizvodno mašinstvo','PM');
+insert into "smer"("id","naziv","oznaka")values(14,'Energetika i procesna tehnika','EIPT');
+insert into "smer"("id","naziv","oznaka")values(15,'Inžinjerstvo zaštite na radu','IZR');
+
+
+--Grupa podaci
+insert into "grupa"("id","oznaka","smer")values(1,'IT1',1);
+insert into "grupa"("id","oznaka","smer")values(2,'IT2',1);
+
+insert into "grupa"("id","oznaka","smer")values(3,'IM1',2);
+insert into "grupa"("id","oznaka","smer")values(4,'IM2',2);
+
+insert into "grupa"("id","oznaka","smer")values(5,'II1',3);
+insert into "grupa"("id","oznaka","smer")values(6,'II2',3);
+
+insert into "grupa"("id","oznaka","smer")values(7,'RA1',4);
+insert into "grupa"("id","oznaka","smer")values(8,'RA2',4);
+
+insert into "grupa"("id","oznaka","smer")values(9,'SIIT1',5);
+insert into "grupa"("id","oznaka","smer")values(10,'SIIT2',5);
+
+insert into "grupa"("id","oznaka","smer")values(11,'MH1',6);
+insert into "grupa"("id","oznaka","smer")values(12,'MH2',6);
+
+insert into "grupa"("id","oznaka","smer")values(13,'AI1',7);
+insert into "grupa"("id","oznaka","smer")values(14,'AI2',7);
+
+insert into "grupa"("id","oznaka","smer")values(15,'IDM1',8);
+insert into "grupa"("id","oznaka","smer")values(16,'IDM2',8);
+
+insert into "grupa"("id","oznaka","smer")values(17,'GRID1',9);
+insert into "grupa"("id","oznaka","smer")values(18,'GRID2',9);
+
+insert into "grupa"("id","oznaka","smer")values(19,'EET1',10);
+insert into "grupa"("id","oznaka","smer")values(20,'EET2',10);
+
+insert into "grupa"("id","oznaka","smer")values(21,'BMI1',11);
+insert into "grupa"("id","oznaka","smer")values(22,'BMI2',11);
+
+insert into "grupa"("id","oznaka","smer")values(23,'GG1',12);
+insert into "grupa"("id","oznaka","smer")values(24,'GG2',12);
+
+insert into "grupa"("id","oznaka","smer")values(25,'PM1',13);
+insert into "grupa"("id","oznaka","smer")values(26,'PM2',13);
+
+insert into "grupa"("id","oznaka","smer")values(27,'EIPT1',14);
+insert into "grupa"("id","oznaka","smer")values(28,'EIPT2',14);
+
+insert into "grupa"("id","oznaka","smer")values(29,'IZR1',15);
+insert into "grupa"("id","oznaka","smer")values(30,'IZR2',15);
+
+
+--Studnet podaci
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(1,'Mladen','Bajić','IT46',1,1);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(2,'Jovan','Milošević','IT47',1,1);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(3,'Vuk','Pekez','IT48',2,3);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(4,'Kosta','Milošev','IT1',2,3);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(5,'Đorđe','Atanackov','IT2',3,5);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(6,'Stefan','Radojevic','IT3',3,5);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(7,'Milica','Tomanovic','IT4',4,2);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(8,'Tara','Damjenović','IT5',4,2);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(9,'Miloš','Bajić','IT11',5,10);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(10,'Miljko','Radoš','IT7',5,10);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(11,'Miloš','Glendža','IT6',6,4);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(12,'Nikolina','Pavlovic','IT9',6,4);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(13,'Josip','Kruščić','IT8',7,11);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(14,'Mirko','Nikolic','IT10',7,11);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(15,'Vladan','Mirkić','IT12',8,6);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(16,'Ognjen','Bošnjak','IT14',8,6);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(17,'Marija','Prodić','IT13',9,15);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(18,'Nataša','Romić','IT51',9,15);
+
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(19,'Mirjana','Rakić','IT15',10,7);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(20,'Radovan','Milkić','IT16',10,7);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(21,'Bojana','Perić','IT20',11,8);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(22,'Radan','Kraišnik','IT17',11,8);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(23,'Boško','Stinjak','IT18',12,9);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(24,'Luka','Lomić','IT21',12,9);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(25,'Mladen','Perić','IT19',13,14);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(26,'Vajko','Rilek','IT24',13,14);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(27,'Rada','Jović','IT22',14,10);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(28,'Mara','Simović','IT23',14,10);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(29,'Sena','Kosančić','IT25',15,11);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(30,'Jelena','Vikić','IT26',15,11);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(31,'Ana','Krića','IT27',16,12);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(32,'Radovan','Sladojević','IT28',16,12);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(33,'Dragoljub','Orčić','IT30',17,13);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(34,'Mina','Vezuović','IT29',17,13);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(35,'Lazar','Bojić','IT40',18,15);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(36,'Pero','Bojkić','IT31',18,15);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(37,'Nikolina','Vihor','IT32',19,1);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(38,'Nikola','Vučić','IT41',19,1);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(39,'Zlatko','Korać','IT33',20,4);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(40,'Vido','Spajić','IT42',20,4);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(41,'Stefan','Jović','IT34',21,5);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(42,'Luka','Perić','IT43',21,5);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(43,'Mihailo','Vidačak','IT35',22,11);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(44,'Radan','Kumovski','IT44',22,11);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(45,'Predrag','Bajić','IT36',23,3);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(46,'Milica','Kruna','IT37',23,3);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(47,'Nataša','Pekić','IT101',24,7);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(48,'Petar','Petrović','IT99',24,7);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(49,'Zvonimir','Prešić','IT58',25,8);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(50,'Radenko','Sirić','IT89',25,8);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(51,'Antoneta','Vojić','IT77',26,6);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(52,'Radoš','Pekić','IT88',26,6);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(53,'Branko','Dragojlović','IT120',27,8);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(54,'Milkica','Radić','IT96',27,8);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(55,'Marko','Milošević','IT98',28,12);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(56,'Luka','Milošević','IT99',28,12);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(57,'Aleksa','Borić','IT65',29,14);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(58,'Radosav','Miljenović','IT69',29,14);
+
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(59,'Veljko','Plačina','IT55',30,15);
+insert into "student"("id","ime","prezime","broj_indeksa","grupa","projekat")
+values(60,'Krsto','Gojković','IT66',30,15);
+
